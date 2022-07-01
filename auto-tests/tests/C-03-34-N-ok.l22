@@ -1,0 +1,5 @@
+text x = "ola" 
+begin 
+    write x     
+    return 0 
+end

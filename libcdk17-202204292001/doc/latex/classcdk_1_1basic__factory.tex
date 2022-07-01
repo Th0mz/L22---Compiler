@@ -1,0 +1,186 @@
+\hypertarget{classcdk_1_1basic__factory}{}\doxysection{cdk\+::basic\+\_\+factory Class Reference}
+\label{classcdk_1_1basic__factory}\index{cdk::basic\_factory@{cdk::basic\_factory}}
+
+
+{\ttfamily \#include $<$basic\+\_\+factory.\+h$>$}
+
+
+
+Inheritance diagram for cdk\+::basic\+\_\+factory\+:
+% FIG 0
+
+
+Collaboration diagram for cdk\+::basic\+\_\+factory\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classcdk_1_1basic__factory_a9cb78539bfef6fef3429337c42b78554}{$\sim$basic\+\_\+factory}} ()
+\item 
+virtual std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcdk_1_1compiler}{compiler}} $>$ \mbox{\hyperlink{classcdk_1_1basic__factory_a883cf0f3e52b5a53b316914c74535de7}{create\+\_\+compiler}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classcdk_1_1basic__factory}{basic\+\_\+factory}} $\ast$ \mbox{\hyperlink{classcdk_1_1basic__factory_a535fded0c301dc7d002f17fe631d5fa9}{get\+\_\+implementation}} (const std\+::string \&language)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcdk_1_1basic__factory_ad6019ad813cd6a082284cd4265d2ea5a}{basic\+\_\+factory}} (const std\+::string \&language)
+\item 
+virtual std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcdk_1_1basic__scanner}{basic\+\_\+scanner}} $>$ \mbox{\hyperlink{classcdk_1_1basic__factory_a25f3a81be472baccf2ab5ffb2f363608}{create\+\_\+scanner}} ()=0
+\item 
+virtual std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcdk_1_1basic__parser}{basic\+\_\+parser}} $>$ \mbox{\hyperlink{classcdk_1_1basic__factory_afc8f88801455bf131cc4039271e6b741}{create\+\_\+parser}} ()=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const std\+::string \mbox{\hyperlink{classcdk_1_1basic__factory_a8c4a1162265812837a9a001973cc9a3a}{\+\_\+language}} = \char`\"{}\char`\"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classcdk_1_1basic__factory}{basic\+\_\+factory}} $\ast$\& \mbox{\hyperlink{classcdk_1_1basic__factory_afe1d033eb16c5096bf745ce9ef0dca71}{factories\+By\+Language}} (const std\+::string \&language)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is the main factory abstract class\+: it provides methods for creating the lexical analyser and the compiler itself. Instances of concrete subclasses will be created by the \char`\"{}main\char`\"{} function to provide instances of the scanner and compiler objects for a concrete language.
+\begin{DoxyItemize}
+\item keys are language names
+\item values are compiler factories 
+\end{DoxyItemize}
+
+Definition at line 24 of file basic\+\_\+factory.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcdk_1_1basic__factory_ad6019ad813cd6a082284cd4265d2ea5a}\label{classcdk_1_1basic__factory_ad6019ad813cd6a082284cd4265d2ea5a}} 
+\index{cdk::basic\_factory@{cdk::basic\_factory}!basic\_factory@{basic\_factory}}
+\index{basic\_factory@{basic\_factory}!cdk::basic\_factory@{cdk::basic\_factory}}
+\doxysubsubsection{\texorpdfstring{basic\_factory()}{basic\_factory()}}
+{\footnotesize\ttfamily cdk\+::basic\+\_\+factory\+::basic\+\_\+factory (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{language }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 41 of file basic\+\_\+factory.\+h.
+
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classcdk_1_1basic__factory_a9cb78539bfef6fef3429337c42b78554}\label{classcdk_1_1basic__factory_a9cb78539bfef6fef3429337c42b78554}} 
+\index{cdk::basic\_factory@{cdk::basic\_factory}!````~basic\_factory@{$\sim$basic\_factory}}
+\index{````~basic\_factory@{$\sim$basic\_factory}!cdk::basic\_factory@{cdk::basic\_factory}}
+\doxysubsubsection{\texorpdfstring{$\sim$basic\_factory()}{~basic\_factory()}}
+{\footnotesize\ttfamily virtual cdk\+::basic\+\_\+factory\+::$\sim$basic\+\_\+factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+The superclass destructor does not do anything. Probably, it would be a good idea to clean up the factories map. 
+
+Definition at line 51 of file basic\+\_\+factory.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcdk_1_1basic__factory_a883cf0f3e52b5a53b316914c74535de7}\label{classcdk_1_1basic__factory_a883cf0f3e52b5a53b316914c74535de7}} 
+\index{cdk::basic\_factory@{cdk::basic\_factory}!create\_compiler@{create\_compiler}}
+\index{create\_compiler@{create\_compiler}!cdk::basic\_factory@{cdk::basic\_factory}}
+\doxysubsubsection{\texorpdfstring{create\_compiler()}{create\_compiler()}}
+{\footnotesize\ttfamily virtual std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classcdk_1_1compiler}{compiler}}$>$ cdk\+::basic\+\_\+factory\+::create\+\_\+compiler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Create a compiler object for a given language. 
+\begin{DoxyParams}{Parameters}
+{\em name} & name of the language handled by the compiler \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+compiler object pointer 
+\end{DoxyReturn}
+
+
+Definition at line 77 of file basic\+\_\+factory.\+h.
+
+Here is the call graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{classcdk_1_1basic__factory_afc8f88801455bf131cc4039271e6b741}\label{classcdk_1_1basic__factory_afc8f88801455bf131cc4039271e6b741}} 
+\index{cdk::basic\_factory@{cdk::basic\_factory}!create\_parser@{create\_parser}}
+\index{create\_parser@{create\_parser}!cdk::basic\_factory@{cdk::basic\_factory}}
+\doxysubsubsection{\texorpdfstring{create\_parser()}{create\_parser()}}
+{\footnotesize\ttfamily virtual std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classcdk_1_1basic__parser}{basic\+\_\+parser}}$>$ cdk\+::basic\+\_\+factory\+::create\+\_\+parser (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+Create a parser object for a given language. 
+\begin{DoxyParams}{Parameters}
+{\em name} & name of the input file (for debug only) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+parser object pointer 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+create\+Compiler 
+\end{DoxySeeAlso}
+
+
+Implemented in \mbox{\hyperlink{classcdk_1_1yy__factory_a9a051ba49001a7dbb9822b64c45135e9}{cdk\+::yy\+\_\+factory$<$ Lexer\+Type $>$}}.
+
+\mbox{\Hypertarget{classcdk_1_1basic__factory_a25f3a81be472baccf2ab5ffb2f363608}\label{classcdk_1_1basic__factory_a25f3a81be472baccf2ab5ffb2f363608}} 
+\index{cdk::basic\_factory@{cdk::basic\_factory}!create\_scanner@{create\_scanner}}
+\index{create\_scanner@{create\_scanner}!cdk::basic\_factory@{cdk::basic\_factory}}
+\doxysubsubsection{\texorpdfstring{create\_scanner()}{create\_scanner()}}
+{\footnotesize\ttfamily virtual std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classcdk_1_1basic__scanner}{basic\+\_\+scanner}}$>$ cdk\+::basic\+\_\+factory\+::create\+\_\+scanner (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+Create a scanner object for a given language. 
+\begin{DoxyParams}{Parameters}
+{\em name} & name of the input file (for debug only) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+scanner object pointer 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+create\+Compiler 
+\end{DoxySeeAlso}
+
+
+Implemented in \mbox{\hyperlink{classcdk_1_1yy__factory_a6132d875a397d6207727b070ed4155de}{cdk\+::yy\+\_\+factory$<$ Lexer\+Type $>$}}.
+
+\mbox{\Hypertarget{classcdk_1_1basic__factory_afe1d033eb16c5096bf745ce9ef0dca71}\label{classcdk_1_1basic__factory_afe1d033eb16c5096bf745ce9ef0dca71}} 
+\index{cdk::basic\_factory@{cdk::basic\_factory}!factoriesByLanguage@{factoriesByLanguage}}
+\index{factoriesByLanguage@{factoriesByLanguage}!cdk::basic\_factory@{cdk::basic\_factory}}
+\doxysubsubsection{\texorpdfstring{factoriesByLanguage()}{factoriesByLanguage()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classcdk_1_1basic__factory}{basic\+\_\+factory}}$\ast$\& cdk\+::basic\+\_\+factory\+::factories\+By\+Language (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{language }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 30 of file basic\+\_\+factory.\+h.
+
+\mbox{\Hypertarget{classcdk_1_1basic__factory_a535fded0c301dc7d002f17fe631d5fa9}\label{classcdk_1_1basic__factory_a535fded0c301dc7d002f17fe631d5fa9}} 
+\index{cdk::basic\_factory@{cdk::basic\_factory}!get\_implementation@{get\_implementation}}
+\index{get\_implementation@{get\_implementation}!cdk::basic\_factory@{cdk::basic\_factory}}
+\doxysubsubsection{\texorpdfstring{get\_implementation()}{get\_implementation()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classcdk_1_1basic__factory}{basic\+\_\+factory}}$\ast$ cdk\+::basic\+\_\+factory\+::get\+\_\+implementation (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{language }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line 36 of file basic\+\_\+factory.\+h.
+
+Here is the call graph for this function\+:
+% FIG 4
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classcdk_1_1basic__factory_a8c4a1162265812837a9a001973cc9a3a}\label{classcdk_1_1basic__factory_a8c4a1162265812837a9a001973cc9a3a}} 
+\index{cdk::basic\_factory@{cdk::basic\_factory}!\_language@{\_language}}
+\index{\_language@{\_language}!cdk::basic\_factory@{cdk::basic\_factory}}
+\doxysubsubsection{\texorpdfstring{\_language}{\_language}}
+{\footnotesize\ttfamily const std\+::string cdk\+::basic\+\_\+factory\+::\+\_\+language = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 27 of file basic\+\_\+factory.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/cdk/\mbox{\hyperlink{basic__factory_8h}{basic\+\_\+factory.\+h}}\end{DoxyCompactItemize}

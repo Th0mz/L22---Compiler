@@ -1,0 +1,17 @@
+digraph "cdk::symbol_table&lt; Symbol &gt;"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{cdk::symbol_table\<\l Symbol \>\n|- _level\l|+ symbol_table()\l+ ~symbol_table()\l+ push()\l+ pop()\l+ insert()\l+ replace_local()\l+ replace()\l+ find_local()\l+ find()\l- destroyCurrent()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" -_current" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{std::map\< K, T \>\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip="STL class."];
+  Node3 -> Node2 [color="grey25",fontsize="10",style="solid",label=" +keys" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{K\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node2 [color="grey25",fontsize="10",style="solid",label=" +elements" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node4 [label="{T\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node1 [color="grey25",fontsize="10",style="solid",label=" -_contexts" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node5 [label="{std::vector\< context\l_type * \>\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node2 -> Node5 [color="grey25",fontsize="10",style="solid",label=" +elements" ,arrowhead="odiamond",fontname="Helvetica"];
+}

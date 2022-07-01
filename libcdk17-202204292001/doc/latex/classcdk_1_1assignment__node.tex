@@ -1,0 +1,127 @@
+\hypertarget{classcdk_1_1assignment__node}{}\doxysection{cdk\+::assignment\+\_\+node Class Reference}
+\label{classcdk_1_1assignment__node}\index{cdk::assignment\_node@{cdk::assignment\_node}}
+
+
+{\ttfamily \#include $<$assignment\+\_\+node.\+h$>$}
+
+
+
+Inheritance diagram for cdk\+::assignment\+\_\+node\+:
+% FIG 0
+
+
+Collaboration diagram for cdk\+::assignment\+\_\+node\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcdk_1_1assignment__node_a644ee5157596c9aaa29007d6e72a4844}{assignment\+\_\+node}} (int \mbox{\hyperlink{classcdk_1_1basic__node_a845822a9c2f758b116086b532e20589c}{lineno}}, \mbox{\hyperlink{classcdk_1_1lvalue__node}{lvalue\+\_\+node}} $\ast$\mbox{\hyperlink{classcdk_1_1assignment__node_af31fd118676196fe9619793ba4c9e237}{lvalue}}, \mbox{\hyperlink{classcdk_1_1expression__node}{expression\+\_\+node}} $\ast$\mbox{\hyperlink{classcdk_1_1assignment__node_a997b389454803f72566a2d77590859a5}{rvalue}})
+\item 
+\mbox{\hyperlink{classcdk_1_1lvalue__node}{lvalue\+\_\+node}} $\ast$ \mbox{\hyperlink{classcdk_1_1assignment__node_af31fd118676196fe9619793ba4c9e237}{lvalue}} ()
+\item 
+\mbox{\hyperlink{classcdk_1_1expression__node}{expression\+\_\+node}} $\ast$ \mbox{\hyperlink{classcdk_1_1assignment__node_a997b389454803f72566a2d77590859a5}{rvalue}} ()
+\item 
+void \mbox{\hyperlink{classcdk_1_1assignment__node_af32696d80268fdb9a7da087966210a1d}{accept}} (\mbox{\hyperlink{classbasic__ast__visitor}{basic\+\_\+ast\+\_\+visitor}} $\ast$av, int level)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcdk_1_1lvalue__node}{lvalue\+\_\+node}} $\ast$ \mbox{\hyperlink{classcdk_1_1assignment__node_af71be159b0cc60cdf8b773b4b99f776f}{\+\_\+lvalue}}
+\item 
+\mbox{\hyperlink{classcdk_1_1expression__node}{expression\+\_\+node}} $\ast$ \mbox{\hyperlink{classcdk_1_1assignment__node_a7a58aefd9ba7ef3b51229924327596dd}{\+\_\+rvalue}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Class for describing assignment nodes. 
+
+Definition at line 12 of file assignment\+\_\+node.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcdk_1_1assignment__node_a644ee5157596c9aaa29007d6e72a4844}\label{classcdk_1_1assignment__node_a644ee5157596c9aaa29007d6e72a4844}} 
+\index{cdk::assignment\_node@{cdk::assignment\_node}!assignment\_node@{assignment\_node}}
+\index{assignment\_node@{assignment\_node}!cdk::assignment\_node@{cdk::assignment\_node}}
+\doxysubsubsection{\texorpdfstring{assignment\_node()}{assignment\_node()}}
+{\footnotesize\ttfamily cdk\+::assignment\+\_\+node\+::assignment\+\_\+node (\begin{DoxyParamCaption}\item[{int}]{lineno,  }\item[{\mbox{\hyperlink{classcdk_1_1lvalue__node}{lvalue\+\_\+node}} $\ast$}]{lvalue,  }\item[{\mbox{\hyperlink{classcdk_1_1expression__node}{expression\+\_\+node}} $\ast$}]{rvalue }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 17 of file assignment\+\_\+node.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcdk_1_1assignment__node_af32696d80268fdb9a7da087966210a1d}\label{classcdk_1_1assignment__node_af32696d80268fdb9a7da087966210a1d}} 
+\index{cdk::assignment\_node@{cdk::assignment\_node}!accept@{accept}}
+\index{accept@{accept}!cdk::assignment\_node@{cdk::assignment\_node}}
+\doxysubsubsection{\texorpdfstring{accept()}{accept()}}
+{\footnotesize\ttfamily void cdk\+::assignment\+\_\+node\+::accept (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbasic__ast__visitor}{basic\+\_\+ast\+\_\+visitor}} $\ast$}]{av,  }\item[{int}]{level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Every node must provide this method.
+
+
+\begin{DoxyParams}{Parameters}
+{\em av} & basic A\+ST visitor \\
+\hline
+{\em level} & syntactic tree level \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classcdk_1_1basic__node_a9cc7c19d913b7b86eb420e8c1e1b221d}{cdk\+::basic\+\_\+node}}.
+
+
+
+Definition at line 29 of file assignment\+\_\+node.\+h.
+
+\mbox{\Hypertarget{classcdk_1_1assignment__node_af31fd118676196fe9619793ba4c9e237}\label{classcdk_1_1assignment__node_af31fd118676196fe9619793ba4c9e237}} 
+\index{cdk::assignment\_node@{cdk::assignment\_node}!lvalue@{lvalue}}
+\index{lvalue@{lvalue}!cdk::assignment\_node@{cdk::assignment\_node}}
+\doxysubsubsection{\texorpdfstring{lvalue()}{lvalue()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcdk_1_1lvalue__node}{lvalue\+\_\+node}}$\ast$ cdk\+::assignment\+\_\+node\+::lvalue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 22 of file assignment\+\_\+node.\+h.
+
+\mbox{\Hypertarget{classcdk_1_1assignment__node_a997b389454803f72566a2d77590859a5}\label{classcdk_1_1assignment__node_a997b389454803f72566a2d77590859a5}} 
+\index{cdk::assignment\_node@{cdk::assignment\_node}!rvalue@{rvalue}}
+\index{rvalue@{rvalue}!cdk::assignment\_node@{cdk::assignment\_node}}
+\doxysubsubsection{\texorpdfstring{rvalue()}{rvalue()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcdk_1_1expression__node}{expression\+\_\+node}}$\ast$ cdk\+::assignment\+\_\+node\+::rvalue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 25 of file assignment\+\_\+node.\+h.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classcdk_1_1assignment__node_af71be159b0cc60cdf8b773b4b99f776f}\label{classcdk_1_1assignment__node_af71be159b0cc60cdf8b773b4b99f776f}} 
+\index{cdk::assignment\_node@{cdk::assignment\_node}!\_lvalue@{\_lvalue}}
+\index{\_lvalue@{\_lvalue}!cdk::assignment\_node@{cdk::assignment\_node}}
+\doxysubsubsection{\texorpdfstring{\_lvalue}{\_lvalue}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcdk_1_1lvalue__node}{lvalue\+\_\+node}}$\ast$ cdk\+::assignment\+\_\+node\+::\+\_\+lvalue\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 13 of file assignment\+\_\+node.\+h.
+
+\mbox{\Hypertarget{classcdk_1_1assignment__node_a7a58aefd9ba7ef3b51229924327596dd}\label{classcdk_1_1assignment__node_a7a58aefd9ba7ef3b51229924327596dd}} 
+\index{cdk::assignment\_node@{cdk::assignment\_node}!\_rvalue@{\_rvalue}}
+\index{\_rvalue@{\_rvalue}!cdk::assignment\_node@{cdk::assignment\_node}}
+\doxysubsubsection{\texorpdfstring{\_rvalue}{\_rvalue}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcdk_1_1expression__node}{expression\+\_\+node}}$\ast$ cdk\+::assignment\+\_\+node\+::\+\_\+rvalue\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 14 of file assignment\+\_\+node.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/cdk/ast/\mbox{\hyperlink{assignment__node_8h}{assignment\+\_\+node.\+h}}\end{DoxyCompactItemize}

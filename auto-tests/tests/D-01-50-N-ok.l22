@@ -1,0 +1,10 @@
+begin
+  if (0) then:
+    write "KO"
+  elif (1) then:
+    write "elif"
+  else:
+    write "OK"
+  return 0
+end
+

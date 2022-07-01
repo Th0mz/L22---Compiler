@@ -1,0 +1,404 @@
+\hypertarget{classcdk_1_1basic__scanner}{}\doxysection{cdk\+::basic\+\_\+scanner Class Reference}
+\label{classcdk_1_1basic__scanner}\index{cdk::basic\_scanner@{cdk::basic\_scanner}}
+
+
+{\ttfamily \#include $<$basic\+\_\+scanner.\+h$>$}
+
+
+
+Inheritance diagram for cdk\+::basic\+\_\+scanner\+:
+% FIG 0
+
+
+Collaboration diagram for cdk\+::basic\+\_\+scanner\+:
+% FIG 1
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structcdk_1_1basic__scanner_1_1null__deleter}{null\+\_\+deleter}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classcdk_1_1basic__scanner_a84724c88be29e36456e3d91a4e6408e9}{$\sim$basic\+\_\+scanner}} ()
+\begin{DoxyCompactList}\small\item\em How to destroy a scanner. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ std\+::istream $>$ \mbox{\hyperlink{classcdk_1_1basic__scanner_a1844bebafdea3dddd4533e37c9c493f0}{input\+\_\+stream}} ()
+\item 
+void \mbox{\hyperlink{classcdk_1_1basic__scanner_a9c6dd4e6d2d776e670cde1c5801cb8c4}{input\+\_\+stream}} (std\+::shared\+\_\+ptr$<$ std\+::istream $>$ istr)
+\item 
+void \mbox{\hyperlink{classcdk_1_1basic__scanner_a95502ae3da1173077fc7b8a541ebd417}{input\+\_\+stream}} (std\+::istream \&istr)
+\item 
+std\+::shared\+\_\+ptr$<$ std\+::ostream $>$ \mbox{\hyperlink{classcdk_1_1basic__scanner_a90349782202ffa3c4afd0368215d5c74}{output\+\_\+stream}} ()
+\item 
+void \mbox{\hyperlink{classcdk_1_1basic__scanner_af48b0fdaef91f8620fd8307a7bcce21f}{output\+\_\+stream}} (std\+::shared\+\_\+ptr$<$ std\+::ostream $>$ ostr)
+\item 
+void \mbox{\hyperlink{classcdk_1_1basic__scanner_a9bbc052f155466df88fab27e4b58a200}{output\+\_\+stream}} (std\+::ostream \&ostr)
+\item 
+std\+::shared\+\_\+ptr$<$ std\+::ostream $>$ \mbox{\hyperlink{classcdk_1_1basic__scanner_a7b915ebc3e30a39b98358fa0ab9e291e}{error\+\_\+stream}} ()
+\item 
+void \mbox{\hyperlink{classcdk_1_1basic__scanner_a1907b7d54ba7b569a46abe427ef3c72e}{error\+\_\+stream}} (std\+::shared\+\_\+ptr$<$ std\+::ostream $>$ estr)
+\item 
+void \mbox{\hyperlink{classcdk_1_1basic__scanner_a10fa62f521c65255c551156748dd97e9}{error\+\_\+stream}} (std\+::ostream \&estr)
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcdk_1_1compiler}{compiler}} $>$ \mbox{\hyperlink{classcdk_1_1basic__scanner_a5997574b9ef358ae140995d2b455146a}{owner}} ()
+\item 
+virtual void \mbox{\hyperlink{classcdk_1_1basic__scanner_a945cd1fe3044cd563a21b5821f607a4e}{switch\+\_\+streams}} ()=0
+\item 
+virtual int \mbox{\hyperlink{classcdk_1_1basic__scanner_aad8bc66ab0e2247392a91057b1bd55cf}{scan}} ()=0
+\item 
+virtual int \mbox{\hyperlink{classcdk_1_1basic__scanner_a958d6207e97b29606410fba4204a60db}{lineno}} () const =0
+\item 
+virtual void \mbox{\hyperlink{classcdk_1_1basic__scanner_ac143930ad276ca56f586211fc52d61f2}{error}} (const std\+::string \&message) const
+\item 
+virtual void \mbox{\hyperlink{classcdk_1_1basic__scanner_a580a8c7525cd0fabe815afbb6c071c0c}{error}} (const char $\ast$const message) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcdk_1_1basic__scanner_a2248aa3bdf1cbbd99791c082c0ff0622}{basic\+\_\+scanner}} (const std\+::string \&language)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const std\+::string \mbox{\hyperlink{classcdk_1_1basic__scanner_a5df3f99fae0e4d32f37a7c866b5a49f9}{\+\_\+language}} = \char`\"{}\char`\"{}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcdk_1_1compiler}{compiler}} $>$ \mbox{\hyperlink{classcdk_1_1basic__scanner_adacdfd18dfe6318bbcf10d164e491a90}{\+\_\+compiler}} = nullptr
+\item 
+std\+::shared\+\_\+ptr$<$ std\+::istream $>$ \mbox{\hyperlink{classcdk_1_1basic__scanner_af1c1bc5c903b5335ad6d4ddd28ea1c65}{\+\_\+istream}}
+\item 
+std\+::shared\+\_\+ptr$<$ std\+::ostream $>$ \mbox{\hyperlink{classcdk_1_1basic__scanner_a4a1e22ea48e5cbe116e68f99b7463096}{\+\_\+ostream}}
+\item 
+std\+::shared\+\_\+ptr$<$ std\+::ostream $>$ \mbox{\hyperlink{classcdk_1_1basic__scanner_ac0c7edce1f9288b2cc5a93087807879c}{\+\_\+estream}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classcdk_1_1basic__scanner_a0668965bc46299553c8fedd88374a49e}{set\+\_\+owner}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcdk_1_1compiler}{compiler}} $>$ \mbox{\hyperlink{classcdk_1_1compiler}{compiler}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classcdk_1_1basic__scanner_a0cda9b397092fcd36f20439c161a8f79}{basic\+\_\+parser}}
+\item 
+class \mbox{\hyperlink{classcdk_1_1basic__scanner_a6450bc9182feebc4fe52fbf86fa0ba40}{compiler}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 13 of file basic\+\_\+scanner.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcdk_1_1basic__scanner_a2248aa3bdf1cbbd99791c082c0ff0622}\label{classcdk_1_1basic__scanner_a2248aa3bdf1cbbd99791c082c0ff0622}} 
+\index{cdk::basic\_scanner@{cdk::basic\_scanner}!basic\_scanner@{basic\_scanner}}
+\index{basic\_scanner@{basic\_scanner}!cdk::basic\_scanner@{cdk::basic\_scanner}}
+\doxysubsubsection{\texorpdfstring{basic\_scanner()}{basic\_scanner()}}
+{\footnotesize\ttfamily cdk\+::basic\+\_\+scanner\+::basic\+\_\+scanner (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{language }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 47 of file basic\+\_\+scanner.\+h.
+
+\mbox{\Hypertarget{classcdk_1_1basic__scanner_a84724c88be29e36456e3d91a4e6408e9}\label{classcdk_1_1basic__scanner_a84724c88be29e36456e3d91a4e6408e9}} 
+\index{cdk::basic\_scanner@{cdk::basic\_scanner}!````~basic\_scanner@{$\sim$basic\_scanner}}
+\index{````~basic\_scanner@{$\sim$basic\_scanner}!cdk::basic\_scanner@{cdk::basic\_scanner}}
+\doxysubsubsection{\texorpdfstring{$\sim$basic\_scanner()}{~basic\_scanner()}}
+{\footnotesize\ttfamily virtual cdk\+::basic\+\_\+scanner\+::$\sim$basic\+\_\+scanner (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+How to destroy a scanner. 
+
+
+
+Definition at line 57 of file basic\+\_\+scanner.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcdk_1_1basic__scanner_a580a8c7525cd0fabe815afbb6c071c0c}\label{classcdk_1_1basic__scanner_a580a8c7525cd0fabe815afbb6c071c0c}} 
+\index{cdk::basic\_scanner@{cdk::basic\_scanner}!error@{error}}
+\index{error@{error}!cdk::basic\_scanner@{cdk::basic\_scanner}}
+\doxysubsubsection{\texorpdfstring{error()}{error()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void cdk\+::basic\+\_\+scanner\+::error (\begin{DoxyParamCaption}\item[{const char $\ast$const}]{message }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Output error message. 
+
+Definition at line 136 of file basic\+\_\+scanner.\+h.
+
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classcdk_1_1basic__scanner_ac143930ad276ca56f586211fc52d61f2}\label{classcdk_1_1basic__scanner_ac143930ad276ca56f586211fc52d61f2}} 
+\index{cdk::basic\_scanner@{cdk::basic\_scanner}!error@{error}}
+\index{error@{error}!cdk::basic\_scanner@{cdk::basic\_scanner}}
+\doxysubsubsection{\texorpdfstring{error()}{error()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual void cdk\+::basic\+\_\+scanner\+::error (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{message }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Output error message. 
+
+Definition at line 129 of file basic\+\_\+scanner.\+h.
+
+Here is the call graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{classcdk_1_1basic__scanner_a7b915ebc3e30a39b98358fa0ab9e291e}\label{classcdk_1_1basic__scanner_a7b915ebc3e30a39b98358fa0ab9e291e}} 
+\index{cdk::basic\_scanner@{cdk::basic\_scanner}!error\_stream@{error\_stream}}
+\index{error\_stream@{error\_stream}!cdk::basic\_scanner@{cdk::basic\_scanner}}
+\doxysubsubsection{\texorpdfstring{error\_stream()}{error\_stream()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$std\+::ostream$>$ cdk\+::basic\+\_\+scanner\+::error\+\_\+stream (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 89 of file basic\+\_\+scanner.\+h.
+
+\mbox{\Hypertarget{classcdk_1_1basic__scanner_a10fa62f521c65255c551156748dd97e9}\label{classcdk_1_1basic__scanner_a10fa62f521c65255c551156748dd97e9}} 
+\index{cdk::basic\_scanner@{cdk::basic\_scanner}!error\_stream@{error\_stream}}
+\index{error\_stream@{error\_stream}!cdk::basic\_scanner@{cdk::basic\_scanner}}
+\doxysubsubsection{\texorpdfstring{error\_stream()}{error\_stream()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void cdk\+::basic\+\_\+scanner\+::error\+\_\+stream (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{estr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 96 of file basic\+\_\+scanner.\+h.
+
+Here is the call graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{classcdk_1_1basic__scanner_a1907b7d54ba7b569a46abe427ef3c72e}\label{classcdk_1_1basic__scanner_a1907b7d54ba7b569a46abe427ef3c72e}} 
+\index{cdk::basic\_scanner@{cdk::basic\_scanner}!error\_stream@{error\_stream}}
+\index{error\_stream@{error\_stream}!cdk::basic\_scanner@{cdk::basic\_scanner}}
+\doxysubsubsection{\texorpdfstring{error\_stream()}{error\_stream()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void cdk\+::basic\+\_\+scanner\+::error\+\_\+stream (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ std\+::ostream $>$}]{estr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 92 of file basic\+\_\+scanner.\+h.
+
+Here is the call graph for this function\+:
+% FIG 5
+\mbox{\Hypertarget{classcdk_1_1basic__scanner_a1844bebafdea3dddd4533e37c9c493f0}\label{classcdk_1_1basic__scanner_a1844bebafdea3dddd4533e37c9c493f0}} 
+\index{cdk::basic\_scanner@{cdk::basic\_scanner}!input\_stream@{input\_stream}}
+\index{input\_stream@{input\_stream}!cdk::basic\_scanner@{cdk::basic\_scanner}}
+\doxysubsubsection{\texorpdfstring{input\_stream()}{input\_stream()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$std\+::istream$>$ cdk\+::basic\+\_\+scanner\+::input\+\_\+stream (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 65 of file basic\+\_\+scanner.\+h.
+
+\mbox{\Hypertarget{classcdk_1_1basic__scanner_a95502ae3da1173077fc7b8a541ebd417}\label{classcdk_1_1basic__scanner_a95502ae3da1173077fc7b8a541ebd417}} 
+\index{cdk::basic\_scanner@{cdk::basic\_scanner}!input\_stream@{input\_stream}}
+\index{input\_stream@{input\_stream}!cdk::basic\_scanner@{cdk::basic\_scanner}}
+\doxysubsubsection{\texorpdfstring{input\_stream()}{input\_stream()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void cdk\+::basic\+\_\+scanner\+::input\+\_\+stream (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{istr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 72 of file basic\+\_\+scanner.\+h.
+
+Here is the call graph for this function\+:
+% FIG 6
+\mbox{\Hypertarget{classcdk_1_1basic__scanner_a9c6dd4e6d2d776e670cde1c5801cb8c4}\label{classcdk_1_1basic__scanner_a9c6dd4e6d2d776e670cde1c5801cb8c4}} 
+\index{cdk::basic\_scanner@{cdk::basic\_scanner}!input\_stream@{input\_stream}}
+\index{input\_stream@{input\_stream}!cdk::basic\_scanner@{cdk::basic\_scanner}}
+\doxysubsubsection{\texorpdfstring{input\_stream()}{input\_stream()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void cdk\+::basic\+\_\+scanner\+::input\+\_\+stream (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ std\+::istream $>$}]{istr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 68 of file basic\+\_\+scanner.\+h.
+
+Here is the call graph for this function\+:
+% FIG 7
+\mbox{\Hypertarget{classcdk_1_1basic__scanner_a958d6207e97b29606410fba4204a60db}\label{classcdk_1_1basic__scanner_a958d6207e97b29606410fba4204a60db}} 
+\index{cdk::basic\_scanner@{cdk::basic\_scanner}!lineno@{lineno}}
+\index{lineno@{lineno}!cdk::basic\_scanner@{cdk::basic\_scanner}}
+\doxysubsubsection{\texorpdfstring{lineno()}{lineno()}}
+{\footnotesize\ttfamily virtual int cdk\+::basic\+\_\+scanner\+::lineno (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Return current source line. 
+
+Implemented in \mbox{\hyperlink{classcdk_1_1yy__scanner_a7dad207713b63d89bc6b0d4f88313bf3}{cdk\+::yy\+\_\+scanner$<$ Lexer\+Type $>$}}.
+
+\mbox{\Hypertarget{classcdk_1_1basic__scanner_a90349782202ffa3c4afd0368215d5c74}\label{classcdk_1_1basic__scanner_a90349782202ffa3c4afd0368215d5c74}} 
+\index{cdk::basic\_scanner@{cdk::basic\_scanner}!output\_stream@{output\_stream}}
+\index{output\_stream@{output\_stream}!cdk::basic\_scanner@{cdk::basic\_scanner}}
+\doxysubsubsection{\texorpdfstring{output\_stream()}{output\_stream()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$std\+::ostream$>$ cdk\+::basic\+\_\+scanner\+::output\+\_\+stream (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 77 of file basic\+\_\+scanner.\+h.
+
+\mbox{\Hypertarget{classcdk_1_1basic__scanner_a9bbc052f155466df88fab27e4b58a200}\label{classcdk_1_1basic__scanner_a9bbc052f155466df88fab27e4b58a200}} 
+\index{cdk::basic\_scanner@{cdk::basic\_scanner}!output\_stream@{output\_stream}}
+\index{output\_stream@{output\_stream}!cdk::basic\_scanner@{cdk::basic\_scanner}}
+\doxysubsubsection{\texorpdfstring{output\_stream()}{output\_stream()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void cdk\+::basic\+\_\+scanner\+::output\+\_\+stream (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{ostr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 84 of file basic\+\_\+scanner.\+h.
+
+Here is the call graph for this function\+:
+% FIG 8
+\mbox{\Hypertarget{classcdk_1_1basic__scanner_af48b0fdaef91f8620fd8307a7bcce21f}\label{classcdk_1_1basic__scanner_af48b0fdaef91f8620fd8307a7bcce21f}} 
+\index{cdk::basic\_scanner@{cdk::basic\_scanner}!output\_stream@{output\_stream}}
+\index{output\_stream@{output\_stream}!cdk::basic\_scanner@{cdk::basic\_scanner}}
+\doxysubsubsection{\texorpdfstring{output\_stream()}{output\_stream()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void cdk\+::basic\+\_\+scanner\+::output\+\_\+stream (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ std\+::ostream $>$}]{ostr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 80 of file basic\+\_\+scanner.\+h.
+
+Here is the call graph for this function\+:
+% FIG 9
+\mbox{\Hypertarget{classcdk_1_1basic__scanner_a5997574b9ef358ae140995d2b455146a}\label{classcdk_1_1basic__scanner_a5997574b9ef358ae140995d2b455146a}} 
+\index{cdk::basic\_scanner@{cdk::basic\_scanner}!owner@{owner}}
+\index{owner@{owner}!cdk::basic\_scanner@{cdk::basic\_scanner}}
+\doxysubsubsection{\texorpdfstring{owner()}{owner()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classcdk_1_1compiler}{compiler}}$>$ cdk\+::basic\+\_\+scanner\+::owner (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 101 of file basic\+\_\+scanner.\+h.
+
+\mbox{\Hypertarget{classcdk_1_1basic__scanner_aad8bc66ab0e2247392a91057b1bd55cf}\label{classcdk_1_1basic__scanner_aad8bc66ab0e2247392a91057b1bd55cf}} 
+\index{cdk::basic\_scanner@{cdk::basic\_scanner}!scan@{scan}}
+\index{scan@{scan}!cdk::basic\_scanner@{cdk::basic\_scanner}}
+\doxysubsubsection{\texorpdfstring{scan()}{scan()}}
+{\footnotesize\ttfamily virtual int cdk\+::basic\+\_\+scanner\+::scan (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Scanning algorithm\+: the compiler object stores the result. 
+\begin{DoxyParams}{Parameters}
+{\em compiler} & the compiler object this parser belongs to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the operation is successful 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcdk_1_1yy__scanner_af3a3f2fc181718ef27ea44870474e3ec}{cdk\+::yy\+\_\+scanner$<$ Lexer\+Type $>$}}.
+
+\mbox{\Hypertarget{classcdk_1_1basic__scanner_a0668965bc46299553c8fedd88374a49e}\label{classcdk_1_1basic__scanner_a0668965bc46299553c8fedd88374a49e}} 
+\index{cdk::basic\_scanner@{cdk::basic\_scanner}!set\_owner@{set\_owner}}
+\index{set\_owner@{set\_owner}!cdk::basic\_scanner@{cdk::basic\_scanner}}
+\doxysubsubsection{\texorpdfstring{set\_owner()}{set\_owner()}}
+{\footnotesize\ttfamily void cdk\+::basic\+\_\+scanner\+::set\+\_\+owner (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcdk_1_1compiler}{compiler}} $>$}]{compiler }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 107 of file basic\+\_\+scanner.\+h.
+
+\mbox{\Hypertarget{classcdk_1_1basic__scanner_a945cd1fe3044cd563a21b5821f607a4e}\label{classcdk_1_1basic__scanner_a945cd1fe3044cd563a21b5821f607a4e}} 
+\index{cdk::basic\_scanner@{cdk::basic\_scanner}!switch\_streams@{switch\_streams}}
+\index{switch\_streams@{switch\_streams}!cdk::basic\_scanner@{cdk::basic\_scanner}}
+\doxysubsubsection{\texorpdfstring{switch\_streams()}{switch\_streams()}}
+{\footnotesize\ttfamily virtual void cdk\+::basic\+\_\+scanner\+::switch\+\_\+streams (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classcdk_1_1yy__scanner_a523200ba3ded52143ecf27750f5a8288}{cdk\+::yy\+\_\+scanner$<$ Lexer\+Type $>$}}.
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classcdk_1_1basic__scanner_a0cda9b397092fcd36f20439c161a8f79}\label{classcdk_1_1basic__scanner_a0cda9b397092fcd36f20439c161a8f79}} 
+\index{cdk::basic\_scanner@{cdk::basic\_scanner}!basic\_parser@{basic\_parser}}
+\index{basic\_parser@{basic\_parser}!cdk::basic\_scanner@{cdk::basic\_scanner}}
+\doxysubsubsection{\texorpdfstring{basic\_parser}{basic\_parser}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classcdk_1_1basic__parser}{basic\+\_\+parser}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 23 of file basic\+\_\+scanner.\+h.
+
+\mbox{\Hypertarget{classcdk_1_1basic__scanner_a6450bc9182feebc4fe52fbf86fa0ba40}\label{classcdk_1_1basic__scanner_a6450bc9182feebc4fe52fbf86fa0ba40}} 
+\index{cdk::basic\_scanner@{cdk::basic\_scanner}!compiler@{compiler}}
+\index{compiler@{compiler}!cdk::basic\_scanner@{cdk::basic\_scanner}}
+\doxysubsubsection{\texorpdfstring{compiler}{compiler}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classcdk_1_1compiler}{compiler}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 24 of file basic\+\_\+scanner.\+h.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classcdk_1_1basic__scanner_adacdfd18dfe6318bbcf10d164e491a90}\label{classcdk_1_1basic__scanner_adacdfd18dfe6318bbcf10d164e491a90}} 
+\index{cdk::basic\_scanner@{cdk::basic\_scanner}!\_compiler@{\_compiler}}
+\index{\_compiler@{\_compiler}!cdk::basic\_scanner@{cdk::basic\_scanner}}
+\doxysubsubsection{\texorpdfstring{\_compiler}{\_compiler}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classcdk_1_1compiler}{compiler}}$>$ cdk\+::basic\+\_\+scanner\+::\+\_\+compiler = nullptr\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 31 of file basic\+\_\+scanner.\+h.
+
+\mbox{\Hypertarget{classcdk_1_1basic__scanner_ac0c7edce1f9288b2cc5a93087807879c}\label{classcdk_1_1basic__scanner_ac0c7edce1f9288b2cc5a93087807879c}} 
+\index{cdk::basic\_scanner@{cdk::basic\_scanner}!\_estream@{\_estream}}
+\index{\_estream@{\_estream}!cdk::basic\_scanner@{cdk::basic\_scanner}}
+\doxysubsubsection{\texorpdfstring{\_estream}{\_estream}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$std\+::ostream$>$ cdk\+::basic\+\_\+scanner\+::\+\_\+estream\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= std::shared\_ptr<std::ostream>(\&std::cerr,}
+\DoxyCodeLine{                                                                           null\_deleter())}
+
+\end{DoxyCode}
+
+
+Definition at line 43 of file basic\+\_\+scanner.\+h.
+
+\mbox{\Hypertarget{classcdk_1_1basic__scanner_af1c1bc5c903b5335ad6d4ddd28ea1c65}\label{classcdk_1_1basic__scanner_af1c1bc5c903b5335ad6d4ddd28ea1c65}} 
+\index{cdk::basic\_scanner@{cdk::basic\_scanner}!\_istream@{\_istream}}
+\index{\_istream@{\_istream}!cdk::basic\_scanner@{cdk::basic\_scanner}}
+\doxysubsubsection{\texorpdfstring{\_istream}{\_istream}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$std\+::istream$>$ cdk\+::basic\+\_\+scanner\+::\+\_\+istream\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= std::shared\_ptr<std::istream>(\&std::cin,}
+\DoxyCodeLine{                                                                           null\_deleter())}
+
+\end{DoxyCode}
+
+
+Definition at line 35 of file basic\+\_\+scanner.\+h.
+
+\mbox{\Hypertarget{classcdk_1_1basic__scanner_a5df3f99fae0e4d32f37a7c866b5a49f9}\label{classcdk_1_1basic__scanner_a5df3f99fae0e4d32f37a7c866b5a49f9}} 
+\index{cdk::basic\_scanner@{cdk::basic\_scanner}!\_language@{\_language}}
+\index{\_language@{\_language}!cdk::basic\_scanner@{cdk::basic\_scanner}}
+\doxysubsubsection{\texorpdfstring{\_language}{\_language}}
+{\footnotesize\ttfamily const std\+::string cdk\+::basic\+\_\+scanner\+::\+\_\+language = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 28 of file basic\+\_\+scanner.\+h.
+
+\mbox{\Hypertarget{classcdk_1_1basic__scanner_a4a1e22ea48e5cbe116e68f99b7463096}\label{classcdk_1_1basic__scanner_a4a1e22ea48e5cbe116e68f99b7463096}} 
+\index{cdk::basic\_scanner@{cdk::basic\_scanner}!\_ostream@{\_ostream}}
+\index{\_ostream@{\_ostream}!cdk::basic\_scanner@{cdk::basic\_scanner}}
+\doxysubsubsection{\texorpdfstring{\_ostream}{\_ostream}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$std\+::ostream$>$ cdk\+::basic\+\_\+scanner\+::\+\_\+ostream\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= std::shared\_ptr<std::ostream>(\&std::cout,}
+\DoxyCodeLine{                                                                           null\_deleter())}
+
+\end{DoxyCode}
+
+
+Definition at line 39 of file basic\+\_\+scanner.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/cdk/\mbox{\hyperlink{basic__scanner_8h}{basic\+\_\+scanner.\+h}}\end{DoxyCompactItemize}

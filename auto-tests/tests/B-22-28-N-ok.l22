@@ -1,0 +1,7 @@
+begin 
+    if (0) then: 
+         write "KO" 
+    else: 
+         write "OK" 
+    return 0 
+end

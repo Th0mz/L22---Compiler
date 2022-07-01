@@ -1,0 +1,5 @@
+begin 
+    write 065 
+    write 065 
+    return 0 
+end

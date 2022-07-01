@@ -1,0 +1,120 @@
+\hypertarget{classcdk_1_1basic__target}{}\doxysection{cdk\+::basic\+\_\+target Class Reference}
+\label{classcdk_1_1basic__target}\index{cdk::basic\_target@{cdk::basic\_target}}
+
+
+{\ttfamily \#include $<$basic\+\_\+target.\+h$>$}
+
+
+
+Collaboration diagram for cdk\+::basic\+\_\+target\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classcdk_1_1basic__target_aaa74cb39cf10b2735b1abc15680898fa}{$\sim$basic\+\_\+target}} ()
+\begin{DoxyCompactList}\small\item\em How to destroy an evaluator. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classcdk_1_1basic__target_a0db773c9c4f84a36df0949187aab9adb}{evaluate}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcdk_1_1compiler}{compiler}} $>$)=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classcdk_1_1basic__target}{basic\+\_\+target}} $\ast$ \mbox{\hyperlink{classcdk_1_1basic__target_a50126c8601a5b82dcce46e43d4258064}{get\+\_\+target\+\_\+for}} (const std\+::string \&target)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcdk_1_1basic__target_a789431eed534e3827eb2686ed00f30b8}{basic\+\_\+target}} (const char $\ast$target)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classcdk_1_1basic__target}{basic\+\_\+target}} $\ast$\& \mbox{\hyperlink{classcdk_1_1basic__target_a3bd1904c0f40efbd88b7825967458fac}{targets\+\_\+by\+\_\+name}} (const std\+::string \&target)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 12 of file basic\+\_\+target.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcdk_1_1basic__target_a789431eed534e3827eb2686ed00f30b8}\label{classcdk_1_1basic__target_a789431eed534e3827eb2686ed00f30b8}} 
+\index{cdk::basic\_target@{cdk::basic\_target}!basic\_target@{basic\_target}}
+\index{basic\_target@{basic\_target}!cdk::basic\_target@{cdk::basic\_target}}
+\doxysubsubsection{\texorpdfstring{basic\_target()}{basic\_target()}}
+{\footnotesize\ttfamily cdk\+::basic\+\_\+target\+::basic\+\_\+target (\begin{DoxyParamCaption}\item[{const char $\ast$}]{target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 34 of file basic\+\_\+target.\+h.
+
+Here is the call graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{classcdk_1_1basic__target_aaa74cb39cf10b2735b1abc15680898fa}\label{classcdk_1_1basic__target_aaa74cb39cf10b2735b1abc15680898fa}} 
+\index{cdk::basic\_target@{cdk::basic\_target}!````~basic\_target@{$\sim$basic\_target}}
+\index{````~basic\_target@{$\sim$basic\_target}!cdk::basic\_target@{cdk::basic\_target}}
+\doxysubsubsection{\texorpdfstring{$\sim$basic\_target()}{~basic\_target()}}
+{\footnotesize\ttfamily virtual cdk\+::basic\+\_\+target\+::$\sim$basic\+\_\+target (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+How to destroy an evaluator. 
+
+
+
+Definition at line 40 of file basic\+\_\+target.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcdk_1_1basic__target_a0db773c9c4f84a36df0949187aab9adb}\label{classcdk_1_1basic__target_a0db773c9c4f84a36df0949187aab9adb}} 
+\index{cdk::basic\_target@{cdk::basic\_target}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!cdk::basic\_target@{cdk::basic\_target}}
+\doxysubsubsection{\texorpdfstring{evaluate()}{evaluate()}}
+{\footnotesize\ttfamily virtual bool cdk\+::basic\+\_\+target\+::evaluate (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcdk_1_1compiler}{compiler}} $>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Evaluation algorithm for a syntax tree\+: processes the tree and sends the result to the output stream. 
+\begin{DoxyParams}{Parameters}
+{\em compiler} & object representing the compiler as a whole \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the operation is successful 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcdk_1_1basic__target_a50126c8601a5b82dcce46e43d4258064}\label{classcdk_1_1basic__target_a50126c8601a5b82dcce46e43d4258064}} 
+\index{cdk::basic\_target@{cdk::basic\_target}!get\_target\_for@{get\_target\_for}}
+\index{get\_target\_for@{get\_target\_for}!cdk::basic\_target@{cdk::basic\_target}}
+\doxysubsubsection{\texorpdfstring{get\_target\_for()}{get\_target\_for()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classcdk_1_1basic__target}{basic\+\_\+target}}$\ast$ cdk\+::basic\+\_\+target\+::get\+\_\+target\+\_\+for (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+How to get an evaluator for a given target. 
+\begin{DoxyParams}{Parameters}
+{\em target} & the target name\+: \char`\"{}asm\char`\"{}, \char`\"{}c\char`\"{}, \char`\"{}xml\char`\"{}, etc. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pointer to the evaluator object 
+\end{DoxyReturn}
+
+
+Definition at line 29 of file basic\+\_\+target.\+h.
+
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classcdk_1_1basic__target_a3bd1904c0f40efbd88b7825967458fac}\label{classcdk_1_1basic__target_a3bd1904c0f40efbd88b7825967458fac}} 
+\index{cdk::basic\_target@{cdk::basic\_target}!targets\_by\_name@{targets\_by\_name}}
+\index{targets\_by\_name@{targets\_by\_name}!cdk::basic\_target@{cdk::basic\_target}}
+\doxysubsubsection{\texorpdfstring{targets\_by\_name()}{targets\_by\_name()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classcdk_1_1basic__target}{basic\+\_\+target}}$\ast$\& cdk\+::basic\+\_\+target\+::targets\+\_\+by\+\_\+name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+This is the registry for all evaluators, indexed by target. Subclasses register their instances here through calls to the superclass constructor. 
+
+Definition at line 18 of file basic\+\_\+target.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/cdk/targets/\mbox{\hyperlink{basic__target_8h}{basic\+\_\+target.\+h}}\end{DoxyCompactItemize}

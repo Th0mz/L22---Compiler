@@ -1,0 +1,195 @@
+\hypertarget{classcdk_1_1basic__parser}{}\doxysection{cdk\+::basic\+\_\+parser Class Reference}
+\label{classcdk_1_1basic__parser}\index{cdk::basic\_parser@{cdk::basic\_parser}}
+
+
+{\ttfamily \#include $<$basic\+\_\+parser.\+h$>$}
+
+
+
+Inheritance diagram for cdk\+::basic\+\_\+parser\+:
+% FIG 0
+
+
+Collaboration diagram for cdk\+::basic\+\_\+parser\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classcdk_1_1basic__parser_a1b6b82eb416740d626d87297ec1d2993}{$\sim$basic\+\_\+parser}} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcdk_1_1compiler}{compiler}} $>$ \mbox{\hyperlink{classcdk_1_1basic__parser_a536c2274f7b00c0e17858b0ee1a400d6}{owner}} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcdk_1_1basic__scanner}{basic\+\_\+scanner}} $>$ \mbox{\hyperlink{classcdk_1_1basic__parser_a68543c111a7fef48ebe70c47b02ead09}{scanner}} ()
+\item 
+void \mbox{\hyperlink{classcdk_1_1basic__parser_acc2215d959879e6fbac2f3e505c6bc03}{scanner}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcdk_1_1basic__scanner}{basic\+\_\+scanner}} $>$ scanner)
+\item 
+virtual int \mbox{\hyperlink{classcdk_1_1basic__parser_a974c94ef048509a80bd042ee9c783513}{parse}} ()=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcdk_1_1basic__parser_a11506116556681fc7fbfe4a974ec0b34}{basic\+\_\+parser}} (const std\+::string \&language, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcdk_1_1basic__scanner}{basic\+\_\+scanner}} $>$ \mbox{\hyperlink{classcdk_1_1basic__parser_a68543c111a7fef48ebe70c47b02ead09}{scanner}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const std\+::string \mbox{\hyperlink{classcdk_1_1basic__parser_a1c97f24997ae2bceeae4822e32a449e4}{\+\_\+language}} = \char`\"{}\char`\"{}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcdk_1_1compiler}{compiler}} $>$ \mbox{\hyperlink{classcdk_1_1basic__parser_a1071aa82583cd806add631b8453fbfb1}{\+\_\+compiler}} = nullptr
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcdk_1_1basic__scanner}{basic\+\_\+scanner}} $>$ \mbox{\hyperlink{classcdk_1_1basic__parser_aa88b520cd9bc71be71c9ad9dedbd9895}{\+\_\+scanner}} = nullptr
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classcdk_1_1basic__parser_a436c4ca9c46073f7c5a8d8086c9e83d4}{set\+\_\+owner}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcdk_1_1compiler}{compiler}} $>$ \mbox{\hyperlink{classcdk_1_1compiler}{compiler}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classcdk_1_1basic__parser_a6450bc9182feebc4fe52fbf86fa0ba40}{compiler}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 12 of file basic\+\_\+parser.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcdk_1_1basic__parser_a11506116556681fc7fbfe4a974ec0b34}\label{classcdk_1_1basic__parser_a11506116556681fc7fbfe4a974ec0b34}} 
+\index{cdk::basic\_parser@{cdk::basic\_parser}!basic\_parser@{basic\_parser}}
+\index{basic\_parser@{basic\_parser}!cdk::basic\_parser@{cdk::basic\_parser}}
+\doxysubsubsection{\texorpdfstring{basic\_parser()}{basic\_parser()}}
+{\footnotesize\ttfamily cdk\+::basic\+\_\+parser\+::basic\+\_\+parser (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{language,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcdk_1_1basic__scanner}{basic\+\_\+scanner}} $>$}]{scanner }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 25 of file basic\+\_\+parser.\+h.
+
+\mbox{\Hypertarget{classcdk_1_1basic__parser_a1b6b82eb416740d626d87297ec1d2993}\label{classcdk_1_1basic__parser_a1b6b82eb416740d626d87297ec1d2993}} 
+\index{cdk::basic\_parser@{cdk::basic\_parser}!````~basic\_parser@{$\sim$basic\_parser}}
+\index{````~basic\_parser@{$\sim$basic\_parser}!cdk::basic\_parser@{cdk::basic\_parser}}
+\doxysubsubsection{\texorpdfstring{$\sim$basic\_parser()}{~basic\_parser()}}
+{\footnotesize\ttfamily virtual cdk\+::basic\+\_\+parser\+::$\sim$basic\+\_\+parser (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 30 of file basic\+\_\+parser.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcdk_1_1basic__parser_a536c2274f7b00c0e17858b0ee1a400d6}\label{classcdk_1_1basic__parser_a536c2274f7b00c0e17858b0ee1a400d6}} 
+\index{cdk::basic\_parser@{cdk::basic\_parser}!owner@{owner}}
+\index{owner@{owner}!cdk::basic\_parser@{cdk::basic\_parser}}
+\doxysubsubsection{\texorpdfstring{owner()}{owner()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classcdk_1_1compiler}{compiler}}$>$ cdk\+::basic\+\_\+parser\+::owner (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 35 of file basic\+\_\+parser.\+h.
+
+\mbox{\Hypertarget{classcdk_1_1basic__parser_a974c94ef048509a80bd042ee9c783513}\label{classcdk_1_1basic__parser_a974c94ef048509a80bd042ee9c783513}} 
+\index{cdk::basic\_parser@{cdk::basic\_parser}!parse@{parse}}
+\index{parse@{parse}!cdk::basic\_parser@{cdk::basic\_parser}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily virtual int cdk\+::basic\+\_\+parser\+::parse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Parse algorithm\+: the compiler object stores the result. 
+\begin{DoxyParams}{Parameters}
+{\em compiler} & the compiler object this parser belongs to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the operation is successful 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcdk_1_1yy__parser_a998a98a7b38a6772fb24ae0eeb87ef17}{cdk\+::yy\+\_\+parser$<$ Lexer\+Type $>$}}.
+
+\mbox{\Hypertarget{classcdk_1_1basic__parser_a68543c111a7fef48ebe70c47b02ead09}\label{classcdk_1_1basic__parser_a68543c111a7fef48ebe70c47b02ead09}} 
+\index{cdk::basic\_parser@{cdk::basic\_parser}!scanner@{scanner}}
+\index{scanner@{scanner}!cdk::basic\_parser@{cdk::basic\_parser}}
+\doxysubsubsection{\texorpdfstring{scanner()}{scanner()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classcdk_1_1basic__scanner}{basic\+\_\+scanner}}$>$ cdk\+::basic\+\_\+parser\+::scanner (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 48 of file basic\+\_\+parser.\+h.
+
+\mbox{\Hypertarget{classcdk_1_1basic__parser_acc2215d959879e6fbac2f3e505c6bc03}\label{classcdk_1_1basic__parser_acc2215d959879e6fbac2f3e505c6bc03}} 
+\index{cdk::basic\_parser@{cdk::basic\_parser}!scanner@{scanner}}
+\index{scanner@{scanner}!cdk::basic\_parser@{cdk::basic\_parser}}
+\doxysubsubsection{\texorpdfstring{scanner()}{scanner()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void cdk\+::basic\+\_\+parser\+::scanner (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcdk_1_1basic__scanner}{basic\+\_\+scanner}} $>$}]{scanner }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 52 of file basic\+\_\+parser.\+h.
+
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classcdk_1_1basic__parser_a436c4ca9c46073f7c5a8d8086c9e83d4}\label{classcdk_1_1basic__parser_a436c4ca9c46073f7c5a8d8086c9e83d4}} 
+\index{cdk::basic\_parser@{cdk::basic\_parser}!set\_owner@{set\_owner}}
+\index{set\_owner@{set\_owner}!cdk::basic\_parser@{cdk::basic\_parser}}
+\doxysubsubsection{\texorpdfstring{set\_owner()}{set\_owner()}}
+{\footnotesize\ttfamily void cdk\+::basic\+\_\+parser\+::set\+\_\+owner (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcdk_1_1compiler}{compiler}} $>$}]{compiler }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 41 of file basic\+\_\+parser.\+h.
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classcdk_1_1basic__parser_a6450bc9182feebc4fe52fbf86fa0ba40}\label{classcdk_1_1basic__parser_a6450bc9182feebc4fe52fbf86fa0ba40}} 
+\index{cdk::basic\_parser@{cdk::basic\_parser}!compiler@{compiler}}
+\index{compiler@{compiler}!cdk::basic\_parser@{cdk::basic\_parser}}
+\doxysubsubsection{\texorpdfstring{compiler}{compiler}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classcdk_1_1compiler}{compiler}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 40 of file basic\+\_\+parser.\+h.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classcdk_1_1basic__parser_a1071aa82583cd806add631b8453fbfb1}\label{classcdk_1_1basic__parser_a1071aa82583cd806add631b8453fbfb1}} 
+\index{cdk::basic\_parser@{cdk::basic\_parser}!\_compiler@{\_compiler}}
+\index{\_compiler@{\_compiler}!cdk::basic\_parser@{cdk::basic\_parser}}
+\doxysubsubsection{\texorpdfstring{\_compiler}{\_compiler}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classcdk_1_1compiler}{compiler}}$>$ cdk\+::basic\+\_\+parser\+::\+\_\+compiler = nullptr\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 19 of file basic\+\_\+parser.\+h.
+
+\mbox{\Hypertarget{classcdk_1_1basic__parser_a1c97f24997ae2bceeae4822e32a449e4}\label{classcdk_1_1basic__parser_a1c97f24997ae2bceeae4822e32a449e4}} 
+\index{cdk::basic\_parser@{cdk::basic\_parser}!\_language@{\_language}}
+\index{\_language@{\_language}!cdk::basic\_parser@{cdk::basic\_parser}}
+\doxysubsubsection{\texorpdfstring{\_language}{\_language}}
+{\footnotesize\ttfamily const std\+::string cdk\+::basic\+\_\+parser\+::\+\_\+language = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 16 of file basic\+\_\+parser.\+h.
+
+\mbox{\Hypertarget{classcdk_1_1basic__parser_aa88b520cd9bc71be71c9ad9dedbd9895}\label{classcdk_1_1basic__parser_aa88b520cd9bc71be71c9ad9dedbd9895}} 
+\index{cdk::basic\_parser@{cdk::basic\_parser}!\_scanner@{\_scanner}}
+\index{\_scanner@{\_scanner}!cdk::basic\_parser@{cdk::basic\_parser}}
+\doxysubsubsection{\texorpdfstring{\_scanner}{\_scanner}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classcdk_1_1basic__scanner}{basic\+\_\+scanner}}$>$ cdk\+::basic\+\_\+parser\+::\+\_\+scanner = nullptr\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 22 of file basic\+\_\+parser.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/cdk/\mbox{\hyperlink{basic__parser_8h}{basic\+\_\+parser.\+h}}\end{DoxyCompactItemize}

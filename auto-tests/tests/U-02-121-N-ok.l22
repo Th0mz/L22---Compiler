@@ -1,0 +1,17 @@
+var f = (int i) -> int:
+   return i + 1
+var g = (int n, int<int> fun) -> int:
+   return fun(n)
+begin
+  write g(3, f)  ;; retorna 4
+  write g(3, (int i) -> int:
+        return i * 2
+  )  ;; retorna 6
+  write g(((int i)->int:
+     return 7 + i
+  )(8), (int i) -> int:
+        return i * 2
+  )  ;; retorna 30
+  return 0
+end
+

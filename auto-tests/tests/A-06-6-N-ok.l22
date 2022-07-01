@@ -1,0 +1,4 @@
+begin 
+    write "ola" 
+    return 0 
+end

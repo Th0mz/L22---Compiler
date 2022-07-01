@@ -1,0 +1,7 @@
+var f = () -> void: 
+  write "ola"
+begin
+  f()
+  return 0
+end
+

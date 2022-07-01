@@ -1,0 +1,6 @@
+foreign int<> argc
+begin
+  write argc()
+  return 0
+end
+

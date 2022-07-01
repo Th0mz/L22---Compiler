@@ -1,0 +1,154 @@
+\hypertarget{classcdk_1_1structured__type}{}\doxysection{cdk\+::structured\+\_\+type Class Reference}
+\label{classcdk_1_1structured__type}\index{cdk::structured\_type@{cdk::structured\_type}}
+
+
+{\ttfamily \#include $<$structured\+\_\+type.\+h$>$}
+
+
+
+Inheritance diagram for cdk\+::structured\+\_\+type\+:
+% FIG 0
+
+
+Collaboration diagram for cdk\+::structured\+\_\+type\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcdk_1_1structured__type_ac214f87979d13551bfeeea015816d48d}{structured\+\_\+type}} (\mbox{\hyperlink{structcdk_1_1basic__type_1_1explicit__call__disabled}{explicit\+\_\+call\+\_\+disabled}}, const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcdk_1_1basic__type}{basic\+\_\+type}} $>$$>$ \&\mbox{\hyperlink{classcdk_1_1structured__type_a30e73634d7995df6f8f4b28b42357c94}{components}})
+\item 
+\mbox{\hyperlink{classcdk_1_1structured__type_a8914b80a0c986ae4bd3957e22644e7d2}{$\sim$structured\+\_\+type}} ()=default
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcdk_1_1basic__type}{basic\+\_\+type}} $>$ \mbox{\hyperlink{classcdk_1_1structured__type_a93594e1b3846a8efa53a2c976e39342e}{component}} (size\+\_\+t ix)
+\item 
+const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcdk_1_1basic__type}{basic\+\_\+type}} $>$ $>$ \& \mbox{\hyperlink{classcdk_1_1structured__type_a30e73634d7995df6f8f4b28b42357c94}{components}} () const
+\item 
+size\+\_\+t \mbox{\hyperlink{classcdk_1_1structured__type_a95cef3188c6480326b9e31e35d3d22b7}{length}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static auto \mbox{\hyperlink{classcdk_1_1structured__type_a7582cb7bdf958186a68d37b5c7fa2ee9}{create}} (const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcdk_1_1basic__type}{basic\+\_\+type}} $>$$>$ \&types)
+\item 
+static auto \mbox{\hyperlink{classcdk_1_1structured__type_adc5eced47583420b6478eb92db02f8bd}{cast}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcdk_1_1basic__type}{basic\+\_\+type}} $>$ type)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \mbox{\hyperlink{classcdk_1_1structured__type_afff0ece6f6b57543e3aa2cd0810cb774}{compute\+\_\+size}} (const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcdk_1_1basic__type}{basic\+\_\+type}} $>$$>$ \&\mbox{\hyperlink{classcdk_1_1structured__type_a30e73634d7995df6f8f4b28b42357c94}{components}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcdk_1_1basic__type}{basic\+\_\+type}} $>$ $>$ \mbox{\hyperlink{classcdk_1_1structured__type_a3e45e80b9591b2e7797a8394b7aa9c22}{\+\_\+components}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This class represents a structured type concept. 
+
+Definition at line 13 of file structured\+\_\+type.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcdk_1_1structured__type_ac214f87979d13551bfeeea015816d48d}\label{classcdk_1_1structured__type_ac214f87979d13551bfeeea015816d48d}} 
+\index{cdk::structured\_type@{cdk::structured\_type}!structured\_type@{structured\_type}}
+\index{structured\_type@{structured\_type}!cdk::structured\_type@{cdk::structured\_type}}
+\doxysubsubsection{\texorpdfstring{structured\_type()}{structured\_type()}}
+{\footnotesize\ttfamily cdk\+::structured\+\_\+type\+::structured\+\_\+type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcdk_1_1basic__type_1_1explicit__call__disabled}{explicit\+\_\+call\+\_\+disabled}}}]{,  }\item[{const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcdk_1_1basic__type}{basic\+\_\+type}} $>$$>$ \&}]{components }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Definition at line 26 of file structured\+\_\+type.\+h.
+
+\mbox{\Hypertarget{classcdk_1_1structured__type_a8914b80a0c986ae4bd3957e22644e7d2}\label{classcdk_1_1structured__type_a8914b80a0c986ae4bd3957e22644e7d2}} 
+\index{cdk::structured\_type@{cdk::structured\_type}!````~structured\_type@{$\sim$structured\_type}}
+\index{````~structured\_type@{$\sim$structured\_type}!cdk::structured\_type@{cdk::structured\_type}}
+\doxysubsubsection{\texorpdfstring{$\sim$structured\_type()}{~structured\_type()}}
+{\footnotesize\ttfamily cdk\+::structured\+\_\+type\+::$\sim$structured\+\_\+type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcdk_1_1structured__type_adc5eced47583420b6478eb92db02f8bd}\label{classcdk_1_1structured__type_adc5eced47583420b6478eb92db02f8bd}} 
+\index{cdk::structured\_type@{cdk::structured\_type}!cast@{cast}}
+\index{cast@{cast}!cdk::structured\_type@{cdk::structured\_type}}
+\doxysubsubsection{\texorpdfstring{cast()}{cast()}}
+{\footnotesize\ttfamily static auto cdk\+::structured\+\_\+type\+::cast (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcdk_1_1basic__type}{basic\+\_\+type}} $>$}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line 53 of file structured\+\_\+type.\+h.
+
+\mbox{\Hypertarget{classcdk_1_1structured__type_a93594e1b3846a8efa53a2c976e39342e}\label{classcdk_1_1structured__type_a93594e1b3846a8efa53a2c976e39342e}} 
+\index{cdk::structured\_type@{cdk::structured\_type}!component@{component}}
+\index{component@{component}!cdk::structured\_type@{cdk::structured\_type}}
+\doxysubsubsection{\texorpdfstring{component()}{component()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classcdk_1_1basic__type}{basic\+\_\+type}}$>$ cdk\+::structured\+\_\+type\+::component (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{ix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 35 of file structured\+\_\+type.\+h.
+
+\mbox{\Hypertarget{classcdk_1_1structured__type_a30e73634d7995df6f8f4b28b42357c94}\label{classcdk_1_1structured__type_a30e73634d7995df6f8f4b28b42357c94}} 
+\index{cdk::structured\_type@{cdk::structured\_type}!components@{components}}
+\index{components@{components}!cdk::structured\_type@{cdk::structured\_type}}
+\doxysubsubsection{\texorpdfstring{components()}{components()}}
+{\footnotesize\ttfamily const std\+::vector$<$std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classcdk_1_1basic__type}{basic\+\_\+type}}$>$ $>$\& cdk\+::structured\+\_\+type\+::components (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 39 of file structured\+\_\+type.\+h.
+
+\mbox{\Hypertarget{classcdk_1_1structured__type_afff0ece6f6b57543e3aa2cd0810cb774}\label{classcdk_1_1structured__type_afff0ece6f6b57543e3aa2cd0810cb774}} 
+\index{cdk::structured\_type@{cdk::structured\_type}!compute\_size@{compute\_size}}
+\index{compute\_size@{compute\_size}!cdk::structured\_type@{cdk::structured\_type}}
+\doxysubsubsection{\texorpdfstring{compute\_size()}{compute\_size()}}
+{\footnotesize\ttfamily size\+\_\+t cdk\+::structured\+\_\+type\+::compute\+\_\+size (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcdk_1_1basic__type}{basic\+\_\+type}} $>$$>$ \&}]{components }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 17 of file structured\+\_\+type.\+h.
+
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{classcdk_1_1structured__type_a7582cb7bdf958186a68d37b5c7fa2ee9}\label{classcdk_1_1structured__type_a7582cb7bdf958186a68d37b5c7fa2ee9}} 
+\index{cdk::structured\_type@{cdk::structured\_type}!create@{create}}
+\index{create@{create}!cdk::structured\_type@{cdk::structured\_type}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily static auto cdk\+::structured\+\_\+type\+::create (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcdk_1_1basic__type}{basic\+\_\+type}} $>$$>$ \&}]{types }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line 49 of file structured\+\_\+type.\+h.
+
+\mbox{\Hypertarget{classcdk_1_1structured__type_a95cef3188c6480326b9e31e35d3d22b7}\label{classcdk_1_1structured__type_a95cef3188c6480326b9e31e35d3d22b7}} 
+\index{cdk::structured\_type@{cdk::structured\_type}!length@{length}}
+\index{length@{length}!cdk::structured\_type@{cdk::structured\_type}}
+\doxysubsubsection{\texorpdfstring{length()}{length()}}
+{\footnotesize\ttfamily size\+\_\+t cdk\+::structured\+\_\+type\+::length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 43 of file structured\+\_\+type.\+h.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classcdk_1_1structured__type_a3e45e80b9591b2e7797a8394b7aa9c22}\label{classcdk_1_1structured__type_a3e45e80b9591b2e7797a8394b7aa9c22}} 
+\index{cdk::structured\_type@{cdk::structured\_type}!\_components@{\_components}}
+\index{\_components@{\_components}!cdk::structured\_type@{cdk::structured\_type}}
+\doxysubsubsection{\texorpdfstring{\_components}{\_components}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classcdk_1_1basic__type}{basic\+\_\+type}}$>$ $>$ cdk\+::structured\+\_\+type\+::\+\_\+components\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 14 of file structured\+\_\+type.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/cdk/types/\mbox{\hyperlink{structured__type_8h}{structured\+\_\+type.\+h}}\end{DoxyCompactItemize}

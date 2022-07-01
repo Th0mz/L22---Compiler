@@ -1,0 +1,103 @@
+\hypertarget{classcdk_1_1rvalue__node}{}\doxysection{cdk\+::rvalue\+\_\+node Class Reference}
+\label{classcdk_1_1rvalue__node}\index{cdk::rvalue\_node@{cdk::rvalue\_node}}
+
+
+{\ttfamily \#include $<$rvalue\+\_\+node.\+h$>$}
+
+
+
+Inheritance diagram for cdk\+::rvalue\+\_\+node\+:
+% FIG 0
+
+
+Collaboration diagram for cdk\+::rvalue\+\_\+node\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcdk_1_1rvalue__node_acedaa5b5e08c2d7df6464c283fccd63a}{rvalue\+\_\+node}} (int \mbox{\hyperlink{classcdk_1_1basic__node_a845822a9c2f758b116086b532e20589c}{lineno}}, \mbox{\hyperlink{classcdk_1_1lvalue__node}{lvalue\+\_\+node}} $\ast$\mbox{\hyperlink{classcdk_1_1rvalue__node_ad7a9d32fe4b9e44edceacbb2d43655c5}{lvalue}})
+\item 
+\mbox{\hyperlink{classcdk_1_1lvalue__node}{cdk\+::lvalue\+\_\+node}} $\ast$ \mbox{\hyperlink{classcdk_1_1rvalue__node_ad7a9d32fe4b9e44edceacbb2d43655c5}{lvalue}} ()
+\item 
+void \mbox{\hyperlink{classcdk_1_1rvalue__node_af72e48d809752b169369298ec394e2d2}{accept}} (\mbox{\hyperlink{classbasic__ast__visitor}{basic\+\_\+ast\+\_\+visitor}} $\ast$av, int level)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcdk_1_1lvalue__node}{lvalue\+\_\+node}} $\ast$ \mbox{\hyperlink{classcdk_1_1rvalue__node_a37d3e66e803d13f60cf18184ffb79460}{\+\_\+lvalue}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Class for describing left-\/values used as expressions (i.\+e., right-\/values). 
+
+Definition at line 12 of file rvalue\+\_\+node.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcdk_1_1rvalue__node_acedaa5b5e08c2d7df6464c283fccd63a}\label{classcdk_1_1rvalue__node_acedaa5b5e08c2d7df6464c283fccd63a}} 
+\index{cdk::rvalue\_node@{cdk::rvalue\_node}!rvalue\_node@{rvalue\_node}}
+\index{rvalue\_node@{rvalue\_node}!cdk::rvalue\_node@{cdk::rvalue\_node}}
+\doxysubsubsection{\texorpdfstring{rvalue\_node()}{rvalue\_node()}}
+{\footnotesize\ttfamily cdk\+::rvalue\+\_\+node\+::rvalue\+\_\+node (\begin{DoxyParamCaption}\item[{int}]{lineno,  }\item[{\mbox{\hyperlink{classcdk_1_1lvalue__node}{lvalue\+\_\+node}} $\ast$}]{lvalue }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 16 of file rvalue\+\_\+node.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcdk_1_1rvalue__node_af72e48d809752b169369298ec394e2d2}\label{classcdk_1_1rvalue__node_af72e48d809752b169369298ec394e2d2}} 
+\index{cdk::rvalue\_node@{cdk::rvalue\_node}!accept@{accept}}
+\index{accept@{accept}!cdk::rvalue\_node@{cdk::rvalue\_node}}
+\doxysubsubsection{\texorpdfstring{accept()}{accept()}}
+{\footnotesize\ttfamily void cdk\+::rvalue\+\_\+node\+::accept (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbasic__ast__visitor}{basic\+\_\+ast\+\_\+visitor}} $\ast$}]{av,  }\item[{int}]{level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Every node must provide this method.
+
+
+\begin{DoxyParams}{Parameters}
+{\em av} & basic A\+ST visitor \\
+\hline
+{\em level} & syntactic tree level \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classcdk_1_1basic__node_a9cc7c19d913b7b86eb420e8c1e1b221d}{cdk\+::basic\+\_\+node}}.
+
+
+
+Definition at line 25 of file rvalue\+\_\+node.\+h.
+
+\mbox{\Hypertarget{classcdk_1_1rvalue__node_ad7a9d32fe4b9e44edceacbb2d43655c5}\label{classcdk_1_1rvalue__node_ad7a9d32fe4b9e44edceacbb2d43655c5}} 
+\index{cdk::rvalue\_node@{cdk::rvalue\_node}!lvalue@{lvalue}}
+\index{lvalue@{lvalue}!cdk::rvalue\_node@{cdk::rvalue\_node}}
+\doxysubsubsection{\texorpdfstring{lvalue()}{lvalue()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcdk_1_1lvalue__node}{cdk\+::lvalue\+\_\+node}}$\ast$ cdk\+::rvalue\+\_\+node\+::lvalue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 21 of file rvalue\+\_\+node.\+h.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classcdk_1_1rvalue__node_a37d3e66e803d13f60cf18184ffb79460}\label{classcdk_1_1rvalue__node_a37d3e66e803d13f60cf18184ffb79460}} 
+\index{cdk::rvalue\_node@{cdk::rvalue\_node}!\_lvalue@{\_lvalue}}
+\index{\_lvalue@{\_lvalue}!cdk::rvalue\_node@{cdk::rvalue\_node}}
+\doxysubsubsection{\texorpdfstring{\_lvalue}{\_lvalue}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcdk_1_1lvalue__node}{lvalue\+\_\+node}}$\ast$ cdk\+::rvalue\+\_\+node\+::\+\_\+lvalue\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 13 of file rvalue\+\_\+node.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/cdk/ast/\mbox{\hyperlink{rvalue__node_8h}{rvalue\+\_\+node.\+h}}\end{DoxyCompactItemize}

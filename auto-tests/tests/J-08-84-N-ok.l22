@@ -1,0 +1,7 @@
+int<> f = () -> int:
+  return 2
+begin
+  write f()
+  return 0
+end
+
